@@ -1,5 +1,5 @@
 import { Divider, Flex, Typography } from 'antd';
-import { IEvent } from '../interfaces/interfaces';
+import { IEvent } from '../../interfaces/interfaces';
 
 interface IProps {
   event: IEvent;
@@ -15,8 +15,8 @@ export const CardContent = ({ event }: IProps) => {
       <p>Organizer: {event.organizer}</p>
       <p>Date: {event.event_date}</p>
       <Flex justify="space-between">
-        <Link href={`/event/${event.id}`}>Register</Link>
-        <Link href={`/event/${event.id}`}>View</Link>
+        <Link href={`/register/${event.id}`}>Register</Link>
+        <Link href={`/view/${event.id}`}>View</Link>
       </Flex>
     </>
   );

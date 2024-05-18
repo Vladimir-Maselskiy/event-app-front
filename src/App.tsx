@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Flex, List, Card } from 'antd';
-import { CardContent } from './CardContent/CardContent';
+import { CardContent } from './components/CardContent/CardContent';
 import { IEvent } from './interfaces/interfaces';
 import { getEvents } from './utils/api';
 
 function App() {
   const [events, setEvents] = useState<IEvent[]>([]);
+
+  console.log('events', events);
 
   useEffect(() => {
     getEvents().then(res => {
