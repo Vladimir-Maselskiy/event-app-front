@@ -1,34 +1,39 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/tasks.svg';
-import './App.css';
+import { Flex, List, Card } from 'antd';
+import data from '../public/mock.json';
+import { CardContent } from './CardContent/CardContent';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount(count => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <Flex style={{ padding: 40, maxWidth: '1920px' }}>
+      <Flex gap="small">
+        <List
+          grid={{
+            gutter: 16,
+            xs: 1,
+            sm: 1,
+            md: 2,
+            lg: 3,
+            xl: 3,
+            xxl: 3,
+          }}
+          dataSource={data}
+          renderItem={item => (
+            <List.Item>
+              <Card
+                title={item.title}
+                style={{ minWidth: 300, maxWidth: '500px', margin: '0 auto' }}
+                styles={{ body: { height: 260 } }}
+              >
+                <CardContent event={item} />
+              </Card>
+            </List.Item>
+          )}
+        ></List>
+      </Flex>
+    </Flex>
   );
 }
 
