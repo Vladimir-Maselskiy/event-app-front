@@ -1,10 +1,18 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Flex, List, Card } from 'antd';
-import data from '../public/mock.json';
 import { CardContent } from './CardContent/CardContent';
+import { IEvent } from './interfaces/interfaces';
+import { getEvents } from './utils/api';
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [events, setEvents] = useState<IEvent[]>([]);
+
+  useEffect(() => {
+    getEvents().then(res => {
+      console.log('res', res);
+      setEvents(res);
+    });
+  }, []);
 
   return (
     <Flex style={{ padding: 40, maxWidth: '1920px' }}>
@@ -19,7 +27,7 @@ function App() {
             xl: 3,
             xxl: 3,
           }}
-          dataSource={data}
+          dataSource={events}
           renderItem={item => (
             <List.Item>
               <Card

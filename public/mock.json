@@ -348,5 +348,355 @@
     "description": "A fitness challenge event promoting physical activity and health.",
     "event_date": "2028-06-05",
     "organizer": "Fitness Enthusiasts"
+  },
+  {
+    "id": 51,
+    "title": "Tech Innovation Summit",
+    "description": "A summit on the latest innovations in technology.",
+    "event_date": "2024-06-20",
+    "organizer": "Tech Group"
+  },
+  {
+    "id": 52,
+    "title": "Modern Art Exhibition",
+    "description": "An exhibition featuring modern art from various artists.",
+    "event_date": "2024-07-15",
+    "organizer": "Art Society"
+  },
+  {
+    "id": 53,
+    "title": "Jazz Music Festival",
+    "description": "A festival celebrating jazz music with live performances.",
+    "event_date": "2024-08-18",
+    "organizer": "Live Music Events"
+  },
+  {
+    "id": 54,
+    "title": "Entrepreneur Workshop",
+    "description": "A workshop for aspiring entrepreneurs to develop their ideas.",
+    "event_date": "2024-09-10",
+    "organizer": "Business Network"
+  },
+  {
+    "id": 55,
+    "title": "Fitness Expo 2024",
+    "description": "An expo promoting fitness and healthy living.",
+    "event_date": "2024-10-25",
+    "organizer": "Health First"
+  },
+  {
+    "id": 56,
+    "title": "Climate Action Conference",
+    "description": "A conference on taking action against climate change.",
+    "event_date": "2024-11-15",
+    "organizer": "Green Earth"
+  },
+  {
+    "id": 57,
+    "title": "Gourmet Cooking Class",
+    "description": "A class teaching gourmet cooking techniques.",
+    "event_date": "2024-12-10",
+    "organizer": "Chef's Academy"
+  },
+  {
+    "id": 58,
+    "title": "Book Fair 2024",
+    "description": "A fair featuring book sales and author signings.",
+    "event_date": "2024-12-20",
+    "organizer": "Book Lovers Club"
+  },
+  {
+    "id": 59,
+    "title": "Landscape Photography Workshop",
+    "description": "A workshop on landscape photography techniques.",
+    "event_date": "2025-01-15",
+    "organizer": "Photo World"
+  },
+  {
+    "id": 60,
+    "title": "Student Science Fair",
+    "description": "A science fair showcasing student projects.",
+    "event_date": "2025-02-25",
+    "organizer": "Science Association"
+  },
+  {
+    "id": 61,
+    "title": "Ballet Dance Workshop",
+    "description": "A workshop teaching ballet techniques.",
+    "event_date": "2025-03-20",
+    "organizer": "Dance Academy"
+  },
+  {
+    "id": 62,
+    "title": "Ancient History Symposium",
+    "description": "A symposium discussing ancient history.",
+    "event_date": "2025-04-15",
+    "organizer": "History Enthusiasts"
+  },
+  {
+    "id": 63,
+    "title": "Startup Funding Night",
+    "description": "An event for startups to pitch their ideas to investors.",
+    "event_date": "2025-05-25",
+    "organizer": "Startup Hub"
+  },
+  {
+    "id": 64,
+    "title": "International Film Festival",
+    "description": "A festival showcasing international films.",
+    "event_date": "2025-06-20",
+    "organizer": "Cinema Lovers"
+  },
+  {
+    "id": 65,
+    "title": "Mindfulness Yoga Retreat",
+    "description": "A retreat focused on mindfulness and yoga.",
+    "event_date": "2025-07-20",
+    "organizer": "Yoga Center"
+  },
+  {
+    "id": 66,
+    "title": "Digital Marketing Summit",
+    "description": "A summit on digital marketing strategies.",
+    "event_date": "2025-08-30",
+    "organizer": "Marketing Experts"
+  },
+  {
+    "id": 67,
+    "title": "Handmade Crafts Fair",
+    "description": "A fair showcasing handmade crafts.",
+    "event_date": "2025-09-10",
+    "organizer": "Craft Makers"
+  },
+  {
+    "id": 68,
+    "title": "AI Robotics Expo",
+    "description": "An expo on AI and robotics advancements.",
+    "event_date": "2025-10-20",
+    "organizer": "Robotics Association"
+  },
+  {
+    "id": 69,
+    "title": "Gourmet Food Festival",
+    "description": "A festival celebrating gourmet food.",
+    "event_date": "2025-11-25",
+    "organizer": "Gourmet Society"
+  },
+  {
+    "id": 70,
+    "title": "Poetry Workshop",
+    "description": "A workshop on writing and analyzing poetry.",
+    "event_date": "2025-12-15",
+    "organizer": "Writers Guild"
+  },
+  {
+    "id": 71,
+    "title": "Mountain Hike",
+    "description": "A guided hike through mountain trails.",
+    "event_date": "2026-01-20",
+    "organizer": "Nature Club"
+  },
+  {
+    "id": 72,
+    "title": "Charity Walk",
+    "description": "A charity walk to raise funds for a cause.",
+    "event_date": "2026-02-25",
+    "organizer": "Charity Foundation"
+  },
+  {
+    "id": 73,
+    "title": "Web Development Bootcamp",
+    "description": "A bootcamp teaching web development skills.",
+    "event_date": "2026-03-30",
+    "organizer": "Code Academy"
+  },
+  {
+    "id": 74,
+    "title": "Urban Gardening Workshop",
+    "description": "A workshop on urban gardening techniques.",
+    "event_date": "2026-04-20",
+    "organizer": "Gardeners Unite"
+  },
+  {
+    "id": 75,
+    "title": "Health and Fitness Expo",
+    "description": "An expo promoting health and fitness.",
+    "event_date": "2026-05-10",
+    "organizer": "Fitness World"
+  },
+  {
+    "id": 76,
+    "title": "Financial Planning Seminar",
+    "description": "A seminar on financial planning and investing.",
+    "event_date": "2026-06-20",
+    "organizer": "Finance Group"
+  },
+  {
+    "id": 77,
+    "title": "Animal Adoption Day",
+    "description": "An event to promote pet adoption.",
+    "event_date": "2026-07-15",
+    "organizer": "Animal Rescue"
+  },
+  {
+    "id": 78,
+    "title": "Cultural Exchange Meetup",
+    "description": "A meetup for cultural exchange and language practice.",
+    "event_date": "2026-08-30",
+    "organizer": "Language Lovers"
+  },
+  {
+    "id": 79,
+    "title": "Portrait Photography Workshop",
+    "description": "A workshop on portrait photography.",
+    "event_date": "2026-09-20",
+    "organizer": "Photo Enthusiasts"
+  },
+  {
+    "id": 80,
+    "title": "AI Development Conference",
+    "description": "A conference on AI development and applications.",
+    "event_date": "2026-10-10",
+    "organizer": "AI Innovators"
+  },
+  {
+    "id": 81,
+    "title": "Electronic Music Production",
+    "description": "A workshop on electronic music production.",
+    "event_date": "2026-11-25",
+    "organizer": "Music Producers"
+  },
+  {
+    "id": 82,
+    "title": "Fashion Design Show",
+    "description": "A show presenting fashion designs.",
+    "event_date": "2026-12-10",
+    "organizer": "Fashion Forward"
+  },
+  {
+    "id": 83,
+    "title": "Cosmic Observation Night",
+    "description": "A night of cosmic observation and talks.",
+    "event_date": "2027-01-15",
+    "organizer": "Astronomy Club"
+  },
+  {
+    "id": 84,
+    "title": "Startup Development Workshop",
+    "description": "A workshop on startup development.",
+    "event_date": "2027-02-20",
+    "organizer": "Entrepreneurs Hub"
+  },
+  {
+    "id": 85,
+    "title": "Drama Theater Performance",
+    "description": "A performance by a drama theater group.",
+    "event_date": "2027-03-10",
+    "organizer": "Theater Guild"
+  },
+  {
+    "id": 86,
+    "title": "Network Security Summit",
+    "description": "A summit on network security challenges.",
+    "event_date": "2027-04-25",
+    "organizer": "Security Experts"
+  },
+  {
+    "id": 87,
+    "title": "Wine Tasting Workshop",
+    "description": "A workshop on wine tasting techniques.",
+    "event_date": "2027-05-20",
+    "organizer": "Wine Lovers Club"
+  },
+  {
+    "id": 88,
+    "title": "Chess Championship",
+    "description": "A championship for chess players.",
+    "event_date": "2027-06-15",
+    "organizer": "Chess Masters"
+  },
+  {
+    "id": 89,
+    "title": "Mindfulness Meditation Retreat",
+    "description": "A retreat focused on mindfulness meditation.",
+    "event_date": "2027-07-10",
+    "organizer": "Mindfulness Center"
+  },
+  {
+    "id": 90,
+    "title": "International Cooking Class",
+    "description": "A class teaching international cooking recipes.",
+    "event_date": "2027-08-25",
+    "organizer": "Cooking School"
+  },
+  {
+    "id": 91,
+    "title": "Emerging Tech Workshop",
+    "description": "A workshop on emerging technologies.",
+    "event_date": "2027-09-20",
+    "organizer": "Tech Innovators"
+  },
+  {
+    "id": 92,
+    "title": "Literary Book Fair",
+    "description": "A fair celebrating literary works.",
+    "event_date": "2027-10-10",
+    "organizer": "Book Enthusiasts"
+  },
+  {
+    "id": 93,
+    "title": "Community Cleanup Day",
+    "description": "A day dedicated to community cleanup efforts.",
+    "event_date": "2027-11-25",
+    "organizer": "Eco Warriors"
+  },
+  {
+    "id": 94,
+    "title": "Innovation Hackathon",
+    "description": "A hackathon focused on innovative solutions.",
+    "event_date": "2027-12-20",
+    "organizer": "Code Masters"
+  },
+  {
+    "id": 95,
+    "title": "Visual Art Workshop",
+    "description": "A workshop on visual art techniques.",
+    "event_date": "2028-01-15",
+    "organizer": "Art Academy"
+  },
+  {
+    "id": 96,
+    "title": "Open Mic Music Jam",
+    "description": "An open mic session for musicians.",
+    "event_date": "2028-02-25",
+    "organizer": "Music Community"
+  },
+  {
+    "id": 97,
+    "title": "Robotics Championship",
+    "description": "A championship for robotics teams.",
+    "event_date": "2028-03-30",
+    "organizer": "Robotics Club"
+  },
+  {
+    "id": 98,
+    "title": "Holistic Wellness Workshop",
+    "description": "A workshop on holistic wellness practices.",
+    "event_date": "2028-04-20",
+    "organizer": "Wellness Group"
+  },
+  {
+    "id": 99,
+    "title": "Scientific Innovation Expo",
+    "description": "An expo showcasing scientific innovations.",
+    "event_date": "2028-05-15",
+    "organizer": "Science Community"
+  },
+  {
+    "id": 100,
+    "title": "Annual Fitness Challenge",
+    "description": "An annual fitness challenge event.",
+    "event_date": "2028-06-10",
+    "organizer": "Fitness Enthusiasts"
   }
 ]
