@@ -1,5 +1,7 @@
 # Registration Events
 
+React + TS + Node/Express + AntD
+
 ## Project features
 
 - Base level - full complited
