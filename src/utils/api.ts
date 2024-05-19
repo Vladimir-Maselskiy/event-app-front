@@ -1,7 +1,7 @@
 import { IUser } from '../interfaces/interfaces';
 
-// const API = 'https://event-app-back.onrender.com/api';
-const API = 'http://localhost:3000/api';
+const API = 'https://event-app-back.onrender.com/api';
+// const API = 'http://localhost:3000/api';
 export const getEvents = async () => {
   try {
     const res = await fetch(`${API}/events`).then(res => res.json());
