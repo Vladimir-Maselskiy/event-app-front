@@ -4,13 +4,9 @@ React + TS + Node/Express + AntD
 
 ## Project features
 
-- Base level - full complited
-- Middle level -full complited 
-- Advanced level :
-              - Events board page: add infinite scroll pagination (when a user scrolls the page, it
-                 utomatically loads more events).
-              - Event participants page: add line/bar chart displaying the amount of registrations   per
-                day for the given event.
+- Base level -  complited
+- Middle level - complited 
+- Advanced level : 1. Events board page: add infinite scroll pagination (when a user scrolls the page, it utomatically loads more events). - copmlited. 2. Event participants page: add line/bar chart displaying the amount of registrations   per day for the given event. - complited
  
 
 ### Install and Run
@@ -37,19 +33,6 @@ npm run dev
 http://localhost:5173
 
 Project structure
-
-├── public          # Публічні файли
-├── src
-│   ├── assets      # Статичні ресурси
-│   ├── components  # React компоненти
-│   ├── pages       # Сторінки
-│   ├── styles      # Стили
-│   ├── App.tsx     # Головний компонент
-│   ├── main.tsx    # Точка входу
-├── index.html      # Головний HTML файл
-├── package.json    # Залежності та скрипти
-├── tsconfig.json   # Налаштування TypeScript
-└── vite.config.ts  # Налаштування Vite
 
 ```
 ├── public # public files;
