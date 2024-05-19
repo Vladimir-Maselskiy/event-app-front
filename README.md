@@ -38,6 +38,19 @@ http://localhost:5173
 
 Project structure
 
+├── public          # Публічні файли
+├── src
+│   ├── assets      # Статичні ресурси
+│   ├── components  # React компоненти
+│   ├── pages       # Сторінки
+│   ├── styles      # Стили
+│   ├── App.tsx     # Головний компонент
+│   ├── main.tsx    # Точка входу
+├── index.html      # Головний HTML файл
+├── package.json    # Залежності та скрипти
+├── tsconfig.json   # Налаштування TypeScript
+└── vite.config.ts  # Налаштування Vite
+
 ├── public # public files;
 ├── src;
 │ ├── assets # static resourse;
