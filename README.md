@@ -38,16 +38,16 @@ http://localhost:5173
 
 Project structure
 
-├── public # public files 
-├── src 
-│ ├── assets # static resourse 
+├── public # public files;
+├── src;
+│ ├── assets # static resourse;
 │
-├──components # React components 
-│ ├── App.tsx # Main Component 
-│ ├── main.tsx #Entry point 
-├── index.html # Main html file 
-├── package.json # Dependencies
-├──tsconfig.json # Config TypeScript 
+├──components # React components;
+│ ├── App.tsx # Main Component;
+│ ├── main.tsx #Entry point;
+├── index.html # Main html file;
+├── package.json # Dependencies;
+├──tsconfig.json # Config TypeScript;
 └── vite.config.ts # Config Vite
 
 
