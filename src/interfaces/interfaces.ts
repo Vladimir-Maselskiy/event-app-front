@@ -5,3 +5,10 @@ export interface IEvent {
   event_date: string;
   organizer: string;
 }
+
+export interface IUser {
+  username: string;
+  password: string;
+  source: string;
+  birthday: string;
+}

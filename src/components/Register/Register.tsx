@@ -1,27 +1,41 @@
 import type { FormProps } from 'antd';
 import { Button, DatePicker, Flex, Form, Input, Radio } from 'antd';
 import dayjs from 'dayjs';
+import { createRegistration } from '../../utils/api';
+import { useParams } from 'react-router-dom';
 
 type FieldType = {
   username: string;
   password: string;
   source: string;
+  birthday: string;
 };
-
-const onFinish: FormProps<FieldType>['onFinish'] = values => {
-  const { username, password, source, birthday } = values;
-  const date = dayjs(birthday).format('YYYY-MM-DD');
-  console.log('date', date);
-  console.log('Success:', values);
-};
-
-const onFinishFailed: FormProps<FieldType>['onFinishFailed'] = errorInfo => {
-  console.log('Failed:', errorInfo);
-};
-
-const dateFormat = 'YYYY-MM-DD';
 
 export const Register = () => {
+  const { id } = useParams();
+
+  const onFinishFailed: FormProps<FieldType>['onFinishFailed'] = errorInfo => {
+    console.log('Failed:', errorInfo);
+  };
+
+  const onFinish: FormProps<FieldType>['onFinish'] = async values => {
+    if (!id) {
+      onFinishFailed('Something went wrong' as any);
+      return;
+    }
+    const { username, password, source, birthday } = values;
+    const date = dayjs(birthday).format('YYYY-MM-DD');
+    console.log('date', date);
+    console.log('Success:', values);
+    const user = {
+      username,
+      password,
+      source,
+      birthday: date,
+    };
+    const eventId = Number(id);
+    const res = await createRegistration({ user, eventId });
+  };
   return (
     <Flex
       justify="center"
