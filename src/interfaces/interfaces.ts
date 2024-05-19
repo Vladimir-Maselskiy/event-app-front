@@ -11,4 +11,5 @@ export interface IUser {
   email: string;
   source: string;
   birthday: string;
+  registrationDate: string;
 }

@@ -2,8 +2,10 @@ import type { FormProps } from 'antd';
 import { Button, DatePicker, Flex, Form, Input, Radio } from 'antd';
 import dayjs from 'dayjs';
 import { createRegistration } from '../../utils/api';
-import { useParams } from 'react-router-dom';
+
 import { BackButton } from '../UI/BackButton/BackButton';
+import { useState } from 'react';
+import { ThanksPage } from '../ThanksPage/ThanksPage';
 
 type FieldType = {
   username: string;
@@ -13,14 +15,18 @@ type FieldType = {
 };
 
 export const Register = () => {
-  const { id } = useParams();
+  const [isRegistrationComplete, setIsRegistrationComplete] = useState(false);
+
+  const queryParams = new URLSearchParams(window.location.search);
+  const eventId = queryParams.get('eventId');
+  const eventTitle = queryParams.get('eventTitle');
 
   const onFinishFailed: FormProps<FieldType>['onFinishFailed'] = errorInfo => {
     console.log('Failed:', errorInfo);
   };
 
   const onFinish: FormProps<FieldType>['onFinish'] = async values => {
-    if (!id) {
+    if (!eventId) {
       onFinishFailed('Something went wrong' as any);
       return;
     }
@@ -28,18 +34,30 @@ export const Register = () => {
     const date = dayjs(birthday).format('YYYY-MM-DD');
     console.log('date', date);
     console.log('Success:', values);
+    const registrationDate = dayjs(new Date()).format('YYYY-MM-DD');
     const user = {
       username,
       email,
       source,
       birthday: date,
+      registrationDate,
     };
-    const registrationDate = dayjs(new Date()).format('YYYY-MM-DD');
-    const eventId = Number(id);
-    const res = await createRegistration({ user, eventId, registrationDate });
+    try {
+      const res = await createRegistration({ user, eventId });
+      if (res) {
+        setIsRegistrationComplete(true);
+        setTimeout(
+          () =>
+            (window.location.href = `/view?eventId=${eventId}&eventTitle=${eventTitle}`),
+          3000
+        );
+      }
+    } catch (error) {
+      onFinishFailed(error as any);
+    }
   };
 
-  return (
+  return !isRegistrationComplete ? (
     <Flex vertical style={{ paddingTop: 100 }}>
       <BackButton />
       <Flex justify="center" align="center" vertical={true}>
@@ -136,5 +154,7 @@ export const Register = () => {
         </Flex>
       </Flex>
     </Flex>
+  ) : (
+    <ThanksPage />
   );
 };

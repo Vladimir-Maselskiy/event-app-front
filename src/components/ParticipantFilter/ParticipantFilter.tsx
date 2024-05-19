@@ -1,6 +1,6 @@
 import { AutoComplete, Flex } from 'antd';
 import { IUser } from '../../interfaces/interfaces';
-import { useState } from 'react';
+import { useMemo } from 'react';
 
 interface IProps {
   patisipant: IUser[];
@@ -11,9 +11,13 @@ export const ParticipantFilter = ({
   patisipant,
   setFilteredParticipant,
 }: IProps) => {
-  const options = patisipant.map(item => ({
-    value: item.username,
-  }));
+  const options = useMemo(
+    () =>
+      patisipant.map(item => ({
+        value: item.username,
+      })),
+    [patisipant]
+  );
 
   const onChangeFilterValue = (value: string) => {
     console.log('value', value);

@@ -13,11 +13,10 @@ export const getEvents = async () => {
 
 export const createRegistration = async (data: {
   user: IUser;
-  eventId: number;
-  registrationDate: string;
+  eventId: string;
 }) => {
-  const { user, eventId, registrationDate } = data;
-  const body = { ...user, eventId, registrationDate };
+  const { user, eventId } = data;
+  const body = { ...user, eventId };
   try {
     const params = {
       method: 'POST',
@@ -26,17 +25,18 @@ export const createRegistration = async (data: {
       },
       body: JSON.stringify(body),
     };
-    const res = await fetch(`${API}/registrations`, params).then(res =>
-      res.json()
-    );
+    return await fetch(`${API}/registrations`, params).then(res => res.json());
   } catch (error) {
     console.log(error);
+    return null;
   }
 };
 
 export const getParticipants = async (eventId: string) => {
   try {
-    const res = await fetch(`${API}/registrations/${eventId}`).then(res => res.json());
+    const res = await fetch(`${API}/registrations/${eventId}`).then(res =>
+      res.json()
+    );
     return res as IUser[] | [];
   } catch (error) {
     console.log(error);

@@ -2,7 +2,7 @@ import { ArrowLeftOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 
 const onBackButtonClick = () => {
-  window.history.back();
+  window.location.href = '/';
 };
 
 export const BackButton = () => {

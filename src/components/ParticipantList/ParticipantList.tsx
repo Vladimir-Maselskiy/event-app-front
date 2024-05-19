@@ -5,14 +5,16 @@ import { Card, Divider, Flex, List } from 'antd';
 import { BackButton } from '../UI/BackButton/BackButton';
 import { ParticipantFilter } from '../ParticipantFilter/ParticipantFilter';
 import { ParticipantContent } from '../ParticipantContent/ParticipantContent';
+import { MyChart } from '../MyChart/MyChart';
 
 export const Participant = () => {
   const [participant, setParticipant] = useState<IUser[]>([]);
   const [filteredParticipant, setFilteredParticipant] = useState<IUser[]>([]);
+  const queryParams = new URLSearchParams(window.location.search);
+  const eventId = queryParams.get('eventId');
+  const eventTitle = queryParams.get('eventTitle');
 
   useEffect(() => {
-    const queryParams = new URLSearchParams(window.location.search);
-    const eventId = queryParams.get('eventId');
     if (!eventId) return;
     getParticipants(eventId).then(res => {
       setParticipant(res);
@@ -57,6 +59,10 @@ export const Participant = () => {
           </List.Item>
         )}
       ></List>
+      <Divider />
+      {participant.length && (
+        <MyChart patisipant={participant} eventTitle={eventTitle} />
+      )}
     </Flex>
   );
 };

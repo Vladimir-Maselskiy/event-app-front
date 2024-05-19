@@ -15,8 +15,12 @@ export const CardContent = ({ event }: IProps) => {
       <p>Organizer: {event.organizer}</p>
       <p>Date: {event.event_date}</p>
       <Flex justify="space-between">
-        <Link href={`/register/${event.id}`}>Register</Link>
-        <Link href={`/view?eventId=${event.id}`}>View</Link>
+        <Link href={`/register?eventId=${event.id}&eventTitle=${event.title}`}>
+          Register
+        </Link>
+        <Link href={`/view?eventId=${event.id}&eventTitle=${event.title}`}>
+          View
+        </Link>
       </Flex>
     </>
   );
