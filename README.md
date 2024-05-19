@@ -37,11 +37,10 @@ Project structure
 ```
 ├── public # public files;
 ├── src;
-│ ├── assets # static resourse;
-│
-├──components # React components;
-│ ├── App.tsx # Main Component;
-│ ├── main.tsx #Entry point;
+│    ├── assets # static resourse;
+│    ├──components # React components;
+│    ├── App.tsx # Main Component;
+│    ├── main.tsx #Entry point;
 ├── index.html # Main html file;
 ├── package.json # Dependencies;
 ├──tsconfig.json # Config TypeScript;
