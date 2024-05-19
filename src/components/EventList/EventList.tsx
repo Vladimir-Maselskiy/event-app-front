@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { IEvent } from '../../interfaces/interfaces';
 import { getEvents } from '../../utils/api';
-import { Card, Divider, List, Skeleton } from 'antd';
+import { Card, Divider, List } from 'antd';
 import { CardContent } from '../CardContent/CardContent';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { useWindowWidth } from '../../hooks/mediascreen';
@@ -13,7 +13,6 @@ export const EventList = () => {
   const [page, setPage] = useState(1);
   const [limit, setLimit] = useState(9);
   const [isLoading, setIsLoading] = useState(false);
-  const [hasMore, setHasMore] = useState(true);
 
   const { windowWidth } = useWindowWidth();
 
