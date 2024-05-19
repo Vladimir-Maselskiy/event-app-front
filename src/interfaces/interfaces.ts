@@ -8,7 +8,7 @@ export interface IEvent {
 
 export interface IUser {
   username: string;
-  password: string;
+  email: string;
   source: string;
   birthday: string;
 }
