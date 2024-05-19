@@ -4,23 +4,28 @@ import { getEvents } from '../../utils/api';
 import { Card, Divider, List } from 'antd';
 import { CardContent } from '../CardContent/CardContent';
 import InfiniteScroll from 'react-infinite-scroll-component';
+import { useWindowWidth } from '../../hooks/mediascreen';
 
 export const EventList = () => {
   const [events, setEvents] = useState<IEvent[]>([]);
   const [currentEvents, setCurrentEvents] = useState<IEvent[]>([]);
-
   const [page, setPage] = useState(1);
-  const [limit, setLimit] = useState(10);
+  const [limit, setLimit] = useState(9);
   const [hasMore, setHasMore] = useState(true);
+
+  const { windowWidth } = useWindowWidth();
+
   const loadMoreData = () => {
     setPage(prev => prev + 1);
   };
 
   useEffect(() => {
     if (!events?.length) return;
-    console.log('events in useEffect');
-    console.log('page', page);
-    setCurrentEvents(events.slice(0, page * limit));
+    const timerId = setTimeout(() => {
+      setCurrentEvents(events.slice(0, page * limit));
+    }, 2000);
+
+    return () => clearTimeout(timerId);
   }, [events, page, limit]);
 
   useEffect(() => {
@@ -28,6 +33,18 @@ export const EventList = () => {
       setEvents(res);
     });
   }, []);
+
+  useEffect(() => {
+    console.log('useEffect windowWidth');
+    if (windowWidth >= 992) {
+      setLimit(9);
+    } else if (windowWidth >= 768) {
+      setLimit(6);
+    } else {
+      setLimit(3);
+    }
+    setPage(1);
+  }, [windowWidth]);
 
   return (
     <InfiniteScroll
