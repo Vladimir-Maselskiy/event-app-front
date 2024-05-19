@@ -51,6 +51,7 @@ Project structure
 ├── tsconfig.json   # Налаштування TypeScript
 └── vite.config.ts  # Налаштування Vite
 
+```
 ├── public # public files;
 ├── src;
 │ ├── assets # static resourse;
@@ -62,5 +63,6 @@ Project structure
 ├── package.json # Dependencies;
 ├──tsconfig.json # Config TypeScript;
 └── vite.config.ts # Config Vite
+```
 
 
