@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.3.7",
-    "@types/styled-components": "^5.1.34",
     "antd": "^5.17.2",
     "chart.js": "^4.4.3",
     "dayjs": "^1.11.11",
@@ -19,8 +18,7 @@
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
     "react-infinite-scroll-component": "^6.1.0",
-    "react-router-dom": "^6.23.1",
-    "styled-components": "^6.1.11"
+    "react-router-dom": "^6.23.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
